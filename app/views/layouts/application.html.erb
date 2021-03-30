@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html class= 'h-100'>
   <head>
     <title>Port</title>
     <%= csrf_meta_tags %>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+  
+    <div class = 'container' id = 'photo-bg'>
+    <%= render 'shared/navbar' %>
+      <div class = 'cover-container d-flex w-100 h-100 p-3 mx-auto flex-column'>
+        <%= yield %>
+      </div>
+    
+    
+          
+    </div>  
   </body>
 </html>

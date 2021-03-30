@@ -1,2 +1,19 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+
+ 
+        <div class = 'card'>
+        <div class = 'card-body'>
+            <div class = 'row'>
+                <div class = 'col-md-4 profile-image'>
+                    <p>
+                        <%= image_tag "quincee_profil.jpg", width: '100%', alt: 'profile image', class: 'profile-image'  %>
+                    </p>
+                </div>
+                <div class = 'col-md-8'>
+                    <p>Whatever you want to put here about yourself and what you like to do.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <%= @album.title %>
+        <%= @album.cover_photo %>
+

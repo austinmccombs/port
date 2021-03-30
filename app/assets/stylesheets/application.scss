@@ -1,0 +1,48 @@
+@import 'bootstrap';
+@import 'font-awesome';
+
+.navbar-nav{
+    flex-direction: row;
+}
+
+.navbar-nav li{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.links{
+    color: #8B4513;
+}
+
+#photo-bg{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: image-url('quincee.jpg') no-repeat;
+    background-size: cover;
+    
+}
+
+.cover-container {
+    max-width: 42em;
+  }
+
+.app-card-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+
+  .card{
+      margin-top: 50px;
+      background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
+      background: rgba(204, 204, 204, 0.5);
+  }
